@@ -30,7 +30,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="btn">
-          <button class="log-in-btn">Login</button>
+          <button class="log-in-btn text-bold">Login</button>
         </div>
       </nav>
     </div>
@@ -162,7 +162,7 @@
             </div>
             <button class="download-btn mt-3">Add & Install Extension</button>
           </div>
-          <div class="download-card">
+          <div class="download-card position-top-3rem">
             <div class="card-content">
               <img class="browser-img"  src="/images/logo-firefox.svg" alt="firefox icon">
               <h4 class="text-md text-dark text-bold mt-1">Add to Firefox</h4>
@@ -170,7 +170,7 @@
             </div>
             <button class="download-btn mt-3">Add & Install Extension</button>
           </div>
-          <div class="download-card">
+          <div class="download-card position-top-6rem">
             <div class="card-content">
               <img class="browser-img"  src="/images/logo-opera.svg" alt="opera icon">
               <h4 class="text-md text-dark text-bold mt-1">Add to Opera</h4>
@@ -194,11 +194,11 @@
            <div class="question-content">
               <div class="question">
                 <p class="text-dark">What is Bookmark?</p>
-                <button class="icon-btn arrow-btn">
-                   <img src="/images/icon-arrow.svg" alt="arrow icon">
+                <button id="arrow-btn" class="icon-btn arrow-btn">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                 </button>
               </div>
-              <div class="answer d-none">
+              <div class="answer">
                 <p class="text-light-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
               </div>
@@ -206,11 +206,11 @@
            <div class="question-content">
               <div class="question">
                 <p class="text-dark">How can I request a new browser?</p>
-                <button class="icon-btn arrow-btn">
-                   <img src="/images/icon-arrow.svg" alt="arrow icon">
+                <button id="arrow-btn" class="icon-btn arrow-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                 </button>
               </div>
-              <div class="answer d-none">
+              <div class="answer">
                 <p class="text-light-grey">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
                   Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
@@ -219,11 +219,11 @@
            <div class="question-content">
               <div class="question">
                 <p class="text-dark">Is there a mobile app?</p>
-                <button class="icon-btn arrow-btn">
-                   <img src="/images/icon-arrow.svg" alt="arrow icon">
+                <button id="arrow-btn" class="icon-btn arrow-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                 </button>
               </div>
-              <div class="answer d-none">
+              <div class="answer">
                 <p class="text-light-grey">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                   sollicitudin ex et ultricies bibendum.</p>
@@ -232,11 +232,11 @@
            <div class="question-content">
               <div class="question">
                 <p class="text-dark">What about other Chromium browsers?</p>
-                <button class="icon-btn arrow-btn">
-                   <img src="/images/icon-arrow.svg" alt="arrow icon">
+                <button id="arrow-btn" class="icon-btn arrow-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                 </button>
               </div>
-              <div class="answer d-none">
+              <div class="answer">
                 <p class="text-light-grey">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                   vitae neque eget nisl gravida pellentesque non ut velit.</p>
               </div>
@@ -256,7 +256,7 @@
         <div class="email-input mt-2">
           <div class="input">
             <input type="email" placeholder="Enter your email address">
-            <span class="error">This is error</span>
+            <span class="error"></span>
           </div>
           <button class="email-btn">Contact Us</button>
         </div>

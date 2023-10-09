@@ -1,13 +1,18 @@
 const questionsContainer = document.querySelectorAll(".question-content")
 
-
-
 questionsContainer.forEach((questionContent) => {
-    const arrowBtn = document.querySelector(".arrow-btn")
+    const arrowBtn = questionContent.querySelector("#arrow-btn")
 
-    // arrowBtn.addEventListener("click", () => {
-    //     questionContent.classList.add("show-text")
-    // })
+    arrowBtn.addEventListener("click", () => {
 
-    // console.log(arrowBtn);
+        questionsContainer.forEach((item) => {
+            if(item !== questionContent){
+                item.classList.remove("show-answer")
+            }
+        })
+       
+        questionContent.classList.toggle("show-answer")
+    })
+
+
 })
