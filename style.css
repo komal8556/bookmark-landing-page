@@ -41,6 +41,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-rubric);
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 img,
@@ -232,13 +233,8 @@ a{
   margin-left: 1rem;
 }
 
-.position-top-3rem{
+.relative{
   position: relative;
-  top: 3rem;
-}
-.position-top-6rem{
-  position: relative;
-  top: 6rem;
 }
 
 
@@ -271,12 +267,13 @@ a{
   top: 0;
   left: 0;
   min-height: 100%;
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   padding: 3rem;
   text-align: center;
   border: 2px solid #fff;
+  z-index: 100;
 }
 
 .navigation-mobile .content-top{
@@ -346,9 +343,21 @@ a{
   width: 100%;
 }
 
+.background-shape-left {
+  position: absolute;
+  left: 134px;
+  bottom: 0;
+  height: 80%;
+  width: 86%;
+  background-color: var(--soft-blue);
+  z-index: -1;
+  border-radius: 200px 0 0 200px;
+  }
+
 .hero-text{
   padding: 0.6rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 /* Feature section */
@@ -377,7 +386,7 @@ a{
   border-bottom: 1px solid var(--grayish-blue);
 }
 
-.feature-btn{
+.feature-tab-btn{
   padding-block: 1.4rem;
   display: block;
   width: 100%;
@@ -387,13 +396,26 @@ a{
   border-bottom: 4px solid transparent;
 }
 
-.feature-btn:hover{
+.feature-tab-btn:hover{
   color: var(--soft-red);
 }
 
-.feature-btn.active{
+.feature-tab-btn.active{
   border-bottom: 4px solid var(--soft-red);
 } 
+
+.feature-tab-btn.active:hover{
+  color: var(--dark-blue);
+}
+
+.feature-tab-content{
+  display: none;
+}
+
+.feature-tab-content.active{
+  display: block;
+}
+
 
 .download-section .container .download-heading {
   text-align: center;
@@ -462,14 +484,17 @@ a{
   border-bottom: 1px solid var(--grayish-blue);
   font-size: 1rem;
 }
+
+.faq-questions-content .question-content:hover .question .text-dark{
+  color: var(--soft-red);
+}
+
 .faq-questions-content .question{
   display: flex;
   justify-content: space-between;
 }
 
-.faq-questions-content .question .question-text{
-  color: var(--);
-}
+
 
 .faq-questions-content .answer{
   display: none;
@@ -496,13 +521,13 @@ a{
   max-width: 34rem;
 }
 
-.email-input{
+.email-input-container{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.email-input .input-error {
+.email-input-container .input-error {
   width: 100%;
   padding: 0.2rem;
   background: var(--soft-red);
@@ -510,13 +535,13 @@ a{
   text-align: left;
 }
 
-.email-input .input-error .error{
+.email-input-container .input-error .error{
   display: block;
   padding: 0.2rem 0.6rem;
   font-size: 0.95rem;
 }
 
-.email-input input{
+.email-input-container input{
   width: 100%;
   border-radius: 5px;
   padding: 0.8rem 1rem;
@@ -526,7 +551,7 @@ a{
 
 
 
-.email-input .email-btn{
+.email-input-container .email-btn{
   padding: 0.8rem 1rem;
   border: 2px solid var(--soft-red);
   background-color: var(--soft-red);
@@ -535,7 +560,7 @@ a{
   border-radius: 5px;
 }
 
-.email-input .email-btn:hover{
+.email-input-container .email-btn:hover{
   background-color: var(--white);
   color: var(--soft-red);
 }
@@ -591,6 +616,17 @@ a{
 
 @media (min-width: 56rem){
 
+  /* positioning */
+
+  .position-top-3rem{
+    position: relative;
+    top: 3rem;
+  }
+  .position-top-6rem{
+    position: relative;
+    top: 6rem;
+  }
+
   .py-big{
     padding-block: 7rem;
   }
@@ -618,6 +654,11 @@ a{
     /* border: 2px solid blue; */
     align-items: center;
     gap: 4rem;
+  }
+
+  .background-shape-left {
+    left: 168px;
+    width: 105%; 
   }
 
   .log-in-btn{
@@ -666,11 +707,11 @@ a{
     order: 1;
     text-align: left;
     align-items: center;
-    width: 45%;
+    width: 38%;
   }
   .hero-section .container .row .hero-img{
     order: 2;
-    width: 55%;
+    width: 57%;
   }
 
   .feature-tab-heading .row{
@@ -683,9 +724,7 @@ a{
     width: 100%;
   }
 
-  .feature-tab .feature-tab-contents .simple-bookmarking .row,
-  .feature-tab .feature-tab-contents .speedy-searching .row,
-  .feature-tab .feature-tab-contents .easy-sharing .row{
+  .feature-tab .feature-tab-contents .feature-tab-content .row{
     display: flex;
     gap: 6%;
     text-align: left;
@@ -718,11 +757,11 @@ a{
     margin-inline: 0;
   }
 
-  .email-input .input{
+  .email-input-container .error-input-container{
     width: 70%;
   }
 
-  .email-input{
+  .email-input-container{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -730,11 +769,11 @@ a{
     /* border: 2px solid #fff; */
   }
 
-  .email-input .input input{
+  .email-input-container .input input{
     width: 100%;
   }
 
-  .email-input button{
+  .email-input-container button{
     width: 30%;
   }
 

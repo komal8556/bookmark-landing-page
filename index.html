@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="/js/toggleMobileNavigation.js" defer></script>
   <script src="/js/faq.js" defer></script>
+  <script src="/js/emailValidation.js" defer ></script>
+  <script src="/js/featureTab.js" defer></script>
   <script src="https://kit.fontawesome.com/c8cef9428d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -60,7 +62,8 @@
   <section class="hero-section">
     <div class="container py-big">
       <div class="row">
-        <div class="col hero-img">
+        <div class="col hero-img relative">
+          <div class="background-shape-left"></div>
           <img class="hero-illustration" src="/images/illustration-hero.svg" alt="hero illustration">
         </div>
         <div class="col hero-text">
@@ -86,18 +89,18 @@
         <div class="feature-tab-heading">
           <div class="row">
             <div class="col feature-btn-div">
-                <a class="feature-btn active text-dark">Simple Bookmarking</a>
+                <button class="feature-tab-btn active text-dark">Simple Bookmarking</button>
             </div>
             <div class="col feature-btn-div">
-                <a class="feature-btn text-dark">Speedy Searching</a>
+                <button class="feature-tab-btn text-dark">Speedy Searching</button>
             </div>
             <div class="col feature-btn-div">
-                <a class="feature-btn text-dark">Easy Sharing</a>
+                <button class="feature-tab-btn text-dark">Easy Sharing</button>
             </div>
           </div>
         </div>
         <div class="feature-tab-contents mt-3">
-            <div class="simple-bookmarking d-none">
+            <div class="feature-tab-content simple-bookmarking active">
                 <div class="row">
                   <div class="col feature-img-container">
                     <img class="feature-img" src="/images/illustration-features-tab-1.svg" alt="feature illustration">
@@ -110,7 +113,7 @@
                   </div>
                 </div>
             </div>
-            <div class="speedy-searching">
+            <div class="feature-tab-content speedy-searching">
                 <div class="row">
                   <div class="col feature-img-container">
                     <img class="feature-img" src="/images/illustration-features-tab-2.svg" alt="feature illustration">
@@ -125,7 +128,7 @@
                   </div>
                 </div>
             </div>
-            <div class="easy-sharing d-none">
+            <div class="feature-tab-content easy-sharing">
                 <div class="row">
                   <div class="col feature-img-container">
                     <img class="feature-img" src="/images/illustration-features-tab-3.svg" alt="feature illustration">
@@ -253,12 +256,12 @@
           <p>35,000+ already joined</p>
           <h3 class="text-lg mt-1"> Stay up-to-date with what we’re doing</h3>
         </div>
-        <div class="email-input mt-2">
-          <div class="input">
-            <input type="email" placeholder="Enter your email address">
-            <span class="error"></span>
+        <div class="email-input-container mt-2">
+          <div class="error-input-container">
+            <input id="email-input" type="email" placeholder="Enter your email address">
+            <span id="error-span" class="error"></span>
           </div>
-          <button class="email-btn">Contact Us</button>
+          <button id="email-btn" class="email-btn">Contact Us</button>
         </div>
     </div>
   </section>
