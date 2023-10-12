@@ -551,7 +551,7 @@ a{
 
 
 
-.email-input-container .email-btn{
+.email-input-container .contact-us-btn{
   padding: 0.8rem 1rem;
   border: 2px solid var(--soft-red);
   background-color: var(--soft-red);
@@ -560,7 +560,7 @@ a{
   border-radius: 5px;
 }
 
-.email-input-container .email-btn:hover{
+.email-input-container .contact-us-btn:hover{
   background-color: var(--white);
   color: var(--soft-red);
 }
