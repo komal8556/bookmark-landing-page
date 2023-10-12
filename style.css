@@ -416,6 +416,17 @@ a{
   display: block;
 }
 
+.background-shape-right {
+  position: absolute;
+  right: 112px;
+  bottom: -50px;
+  height: 97%;
+  width: 98%;
+  background-color: var(--soft-blue);
+  z-index: -1;
+  border-radius: 0 200px 200px 0 ;
+  }
+
 
 .download-section .container .download-heading {
   text-align: center;
@@ -742,6 +753,14 @@ a{
   .feature-tab .feature-tab-contents .easy-sharing .row .feature-text-container{
     width: 40%;
   }
+
+  .background-shape-right {
+    right: 112px;
+    bottom: -50px;
+    /* height: 97%; */
+    width: 116%; 
+    }
+  
 
   .download-section .container .download-cards{
     /* display: flex; */
