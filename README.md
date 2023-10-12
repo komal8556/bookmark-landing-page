@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/komal8556/bookmark-landing-page)
-- Live Site URL: [Add live site URL here](https://gentle-pavlova-337005.netlify.app/)
+- Solution URL: [solution](https://github.com/komal8556/bookmark-landing-page)
+- Live Site URL: [live site](https://gentle-pavlova-337005.netlify.app/)
 
 ### My process
 
