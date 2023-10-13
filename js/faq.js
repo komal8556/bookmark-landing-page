@@ -1,7 +1,7 @@
 const questionsContainer = document.querySelectorAll(".question-content")
 
 questionsContainer.forEach((questionContent) => {
-    const arrowBtn = questionContent.querySelector("#arrow-btn")
+    const arrowBtn = questionContent.querySelector(".arrow-btn")
 
     arrowBtn.addEventListener("click", () => {
 
