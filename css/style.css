@@ -699,19 +699,24 @@ a{
   .hero-section .container .row{
     display: flex;
     align-items: center;
-    gap: 3%;
+    justify-content: space-between;
+    gap: 4%;
+    /* border: 2px solid blue; */
   }
-
+  
+  
   .hero-section .container .row .hero-text{
+    /* border: 2px solid red; */
     order: 1;
     text-align: left;
     align-items: center;
-    width: 42%;
+    width: 46%;
+    margin-top: 0;
   }
 
   .hero-section .container .row .hero-img{
     order: 2;
-    width: 55%;
+    width: 50%;
   }
 
   /* FEATURE SECTION */
