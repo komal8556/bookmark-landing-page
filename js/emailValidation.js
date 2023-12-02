@@ -6,7 +6,7 @@ function validateEmail(){
     const errorInputContainer = document.querySelector(".error-input-container")
     const errorSpan = document.getElementById("error-span")
 
-    let emailInputText = emailInput.value
+    const emailInputText = emailInput.value
 
     errorSpan.textContent = "";
     
@@ -21,6 +21,7 @@ function validateEmail(){
     else{
         errorInputContainer.classList.remove("input-error")
     }
+    console.log(emailInputText);
 }
 
 contactButton.addEventListener("click", validateEmail)

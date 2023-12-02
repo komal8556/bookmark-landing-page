@@ -657,6 +657,10 @@ a{
     gap: 4rem;
   }
 
+  .navigation-mobile{
+    display: none;
+  }
+
   .background-shape-left {
     left: 168px;
     width: 105%; 
