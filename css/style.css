@@ -781,8 +781,12 @@ a{
     gap: 1.3rem;
   }
 
-  .email-input-container .input input{
+  .email-input-container input{
     width: 100%;
+  }
+
+  .email-input-container input:focus{
+    outline: 1px solid var(--dark-blue);
   }
 
   .email-input-container button{
