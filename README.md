@@ -37,8 +37,6 @@ Users should be able to:
 - Solution URL: [solution](https://github.com/komal8556/bookmark-landing-page)
 - Live Site URL: [live site](https://gentle-pavlova-337005.netlify.app/)
 
-### My process
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -57,7 +55,6 @@ My goal is to improve my code and make it more readable, clean, and effective. I
 
 ## Author
 
-- Website - [Komal mishta](https://gentle-pavlova-337005.netlify.app)
 - Frontend Mentor - [@komal8556](https://www.frontendmentor.io/profile/komal8556)
 
 
