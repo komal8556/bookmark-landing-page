@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/komal8556/bookmark-landing-page)
-- Live Site URL: [live site](https://gentle-pavlova-337005.netlify.app/)
+- Live Site URL: [live site](https://bookmark-landing-page1.netlify.app/)
 
 ### Built with
 
